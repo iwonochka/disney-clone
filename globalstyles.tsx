@@ -18,6 +18,14 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
+  h1, h2, h3, h4 {
+    color: ${({ theme }) => theme.white};
+    margin-bottom: 0;
+  }
+  p {
+    color: ${({ theme }) => theme.silver};
+  }
 `
 
 export default GlobalStyle

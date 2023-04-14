@@ -11,7 +11,7 @@ const SignUp = () => {
         alt="Disney Logo"
         loading="lazy"
       />
-      <Headline>+ More than you'd ever imagine</Headline>
+      <Headline>More than you'd ever imagine</Headline>
       <Description>
         Enter your email to create or restart your subscription.
       </Description>
