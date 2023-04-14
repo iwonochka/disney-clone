@@ -63,9 +63,12 @@ export const NavMenu = styled.div`
       transform-origin: left center;
     }
   }
-  svg {
+  img {
     height: 20px;
     z-index: auto;
+  }
+
+  svg {
     margin-right: 0.3rem;
   }
   a {
