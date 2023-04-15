@@ -1,4 +1,6 @@
-export const VideoData = [
+import { VideoDataType } from "../../../types/Videos";
+
+export const VideoData: VideoDataType[] = [
   {
     id: 1,
     name: "Disney",
