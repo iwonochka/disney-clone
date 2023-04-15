@@ -10,3 +10,7 @@ declare module 'styled-components' {
     darkGrey: string,
   }
 }
+
+declare module 'react-hover-video-player' {
+  
+}

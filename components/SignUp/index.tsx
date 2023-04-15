@@ -15,7 +15,7 @@ const SignUp = () => {
       <Description>
         Enter your email to create or restart your subscription.
       </Description>
-      <Input />
+      <Input/>
 
       <Description>
         Get 12 months for the price of 10 when you sign up for an annual
