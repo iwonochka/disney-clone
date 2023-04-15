@@ -1,7 +1,8 @@
 import React from "react";
 import SliderBanner from "./SliderBanner";
-import { Container } from "./styles";
+import { Container, Wrapper } from "./styles";
 import Categories from "./Categories";
+import { VideoData } from "./Categories/Data";
 
 interface Props {}
 
