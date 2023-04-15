@@ -1,9 +1,9 @@
-import React from 'react'
-import "~slick-carousel/slick/slick.css";
-import "~slick-carousel/slick/slick-theme.css";
+import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Carousel, Wrap } from "./styles";
 
-const SliderBanner = () => {
-
+function SliderBanner() {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,9 +12,8 @@ const SliderBanner = () => {
     slidesToScroll: 1,
     autoplay: true,
   };
-
   return (
-    <Carousel {...settings}>SliderBanner
+    <Carousel {...settings}>
       <Wrap>
         <img
           src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/61F97E9098730C6E359AC4FDD76D9BC92B2433346909A818802A9B8EDB02AA97/compose?width=1440&aspectRatio=3.91&format=jpeg&label=staroriginal_391_scrim"
@@ -46,7 +45,7 @@ const SliderBanner = () => {
         />
       </Wrap>
     </Carousel>
-  )
+  );
 }
 
-export default SliderBanner
+export default SliderBanner;

@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
+import SliderBanner from "./SliderBanner";
+import { Container } from "./styles";
 
-type Props = {}
+interface Props {}
 
 function HomeLayout({}: Props) {
   return (
-    <>
-      {/* SliderBanner */}
-      {/* Categories */}
-      {/* Rows with filtered movies */}
-    </>
-  )
+    <Container>
+      <SliderBanner />
+
+    </Container>
+  );
 }
 
-export default HomeLayout
+export default HomeLayout;
