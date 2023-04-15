@@ -1,8 +1,11 @@
 import React from 'react'
+import { Container } from './styles'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <Container>
+      <div>Categories</div>
+    </Container>
   )
 }
 
