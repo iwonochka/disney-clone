@@ -1,10 +1,14 @@
 import React from 'react'
+import { MovieListType } from '../../../types/MovieList'
+import { Container } from './styles'
 
-type Props = {}
+interface Props {
+  movieResult: MovieListType[]
+}
 
-function FilmsRow({}: Props) {
+function FilmsRow({movieResult}: Props) {
   return (
-    <div>FilmsRow</div>
+    <Container>FilmsRow</Container>
   )
 }
 
