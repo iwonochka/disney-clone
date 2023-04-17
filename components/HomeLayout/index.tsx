@@ -3,10 +3,13 @@ import SliderBanner from "./SliderBanner";
 import { Container, Wrapper } from "./styles";
 import Categories from "./Categories";
 import { VideoData } from "./Categories/Data";
+import { MovieListType } from "../../types/MovieList";
 
-interface Props {}
+interface Props {
+  movieResult: MovieListType[]
+}
 
-function HomeLayout({}: Props) {
+function HomeLayout({movieResult}: Props) {
   return (
     <Container>
       <SliderBanner />
