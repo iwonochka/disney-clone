@@ -3,9 +3,14 @@ import Head from 'next/head'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import HomeLayout from '../components/HomeLayout';
+import { MovieListType } from '../types/MovieList';
+
+interface Props {
+  movieResult: MovieListType
+}
 
 
-export default function Home() {
+export default function Home({movieResult}: Props) {
 
   const { data: session, status } = useSession();
   const router = useRouter();
