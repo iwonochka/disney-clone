@@ -1,6 +1,6 @@
 import React from 'react'
 import { MovieListType } from '../../../types/MovieList'
-import { Container } from './styles'
+import { Container, Content } from './styles'
 
 interface Props {
   movieResult: MovieListType[]
@@ -38,7 +38,7 @@ function FilmsRow({movieResult}: Props) {
       },
     ],
   };
-  
+
   return (
     <Container>
       <Content {...settings}>
