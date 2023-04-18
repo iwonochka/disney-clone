@@ -7,8 +7,44 @@ interface Props {
 }
 
 function FilmsRow({movieResult}: Props) {
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  
   return (
-    <Container>FilmsRow</Container>
+    <Container>
+      <Content {...settings}>
+
+      </Content>
+    </Container>
   )
 }
 
