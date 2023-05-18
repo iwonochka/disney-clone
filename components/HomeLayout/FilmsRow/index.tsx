@@ -5,9 +5,10 @@ import { Container, Content, Wrapper } from './styles'
 interface Props {
   movieResult: MovieListType[];
   category: string;
+  addMargin?: boolean;
 }
 
-function FilmsRow({movieResult, category}: Props) {
+function FilmsRow({movieResult, category, addMargin}: Props) {
 
   const settings = {
     dots: false,
@@ -41,7 +42,7 @@ function FilmsRow({movieResult, category}: Props) {
   };
 
   return (
-    <Container>
+    <Container addMargin={addMargin}>
       <Content {...settings}>
       {movieResult?.filter((movie) => movie.type === category)
       ?.map((movie) => (
