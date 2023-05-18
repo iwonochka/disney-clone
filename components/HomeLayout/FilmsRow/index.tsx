@@ -1,12 +1,14 @@
 import React from 'react'
 import { MovieListType } from '../../../types/MovieList'
-import { Container, Content } from './styles'
+import { Container, Content, Wrapper } from './styles'
 
 interface Props {
-  movieResult: MovieListType[]
+  movieResult: MovieListType[];
+  category: string;
+  addMargin?: boolean;
 }
 
-function FilmsRow({movieResult}: Props) {
+function FilmsRow({movieResult, category, addMargin}: Props) {
 
   const settings = {
     dots: false,
@@ -40,9 +42,16 @@ function FilmsRow({movieResult}: Props) {
   };
 
   return (
-    <Container>
+    <Container addMargin={addMargin}>
       <Content {...settings}>
-
+      {movieResult?.filter((movie) => movie.type === category)
+      ?.map((movie) => (
+        <div>
+          <Wrapper key={movie.id}>
+            <img src={movie.cardImg} alt={movie.title} loading='lazy' />
+          </Wrapper>
+        </div>
+      ))}
       </Content>
     </Container>
   )
