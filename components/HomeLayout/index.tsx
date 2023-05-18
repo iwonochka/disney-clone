@@ -15,7 +15,7 @@ function HomeLayout({movieResult}: Props) {
     <Container>
       <SliderBanner />
       <Categories/>
-      <FilmsRow movieResult={movieResult}/>
+      <FilmsRow movieResult={movieResult} category='recommend'/>
       <h4>Recommended for You</h4>
       <h4>Trending</h4>
       <h4>New for You</h4>
