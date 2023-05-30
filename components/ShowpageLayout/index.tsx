@@ -1,5 +1,6 @@
 import React from 'react'
 import { MovieListType } from '../../types/MovieList'
+import { Container } from './styles';
 
 interface Props {
   movieResults: MovieListType;
@@ -7,7 +8,17 @@ interface Props {
 
 function ShowpageLayout({movieResults}: Props) {
   return (
-    <div>ShowpageLayout</div>
+    <Container
+      style={{
+      backgroundImage: `url(${movieResults.backgroundImg})`,
+      opacity: "0.8",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      }}
+    >
+
+    </Container>
   )
 }
 
