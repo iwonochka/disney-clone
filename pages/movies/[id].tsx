@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import React from 'react'
 import { MovieListType } from '../../types/MovieList';
 import { ParsedUrlQuery } from 'querystring';
+import ShowpageLayout from '../../components/ShowpageLayout';
 
 interface Props {
   movieResults: MovieListType;
@@ -10,7 +11,9 @@ interface Props {
 export default function Showpage({movieResults}: Props) {
   console.log(movieResults, "id page")
   return (
-    <div>Showpage</div>
+    <ShowpageLayout movieResults = {movieResults}/>
+
+
   )
 }
 
