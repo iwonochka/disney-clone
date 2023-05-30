@@ -1,6 +1,7 @@
 import React from 'react'
 import { MovieListType } from '../../../types/MovieList'
 import { Container, Content, Wrapper } from './styles'
+import Link from 'next/link';
 
 interface Props {
   movieResult: MovieListType[];
@@ -48,7 +49,9 @@ function FilmsRow({movieResult, category, addMargin}: Props) {
       ?.map((movie) => (
         <div>
           <Wrapper key={movie.id}>
+            <Link href={`/movies/${movie.id}`}>
             <img src={movie.cardImg} alt={movie.title} loading='lazy' />
+            </Link>
           </Wrapper>
         </div>
       ))}
