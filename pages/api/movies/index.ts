@@ -10,7 +10,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2021 • 1h 52m • Family, Fantasy, Animation, Action-Adventure",
         "title": "Raya",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E7D8EFFDD30B2A0E205DDD9929207439B21E7595709769F2A23C50457664FFB2/scale?width=1440&aspectRatio=1.78",
-        "type": "new"
+        "type": "new",
+        "trailer": "https://www.youtube.com/watch?v=1VIZ89FEjYI"
       },
       {
         "id": 2,
@@ -20,7 +21,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2016 • 1h 47m • Family, Fantasy, Animation, Action-Adventure, Musical",
         "title": "Moana",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9562874BAB22B22A698368819B9EBF30FEB0291543552EB2416A5A61A73F63F4/scale?width=1440&aspectRatio=1.78",
-        "type": "trending"
+        "type": "trending",
+        "trailer": "https://www.youtube.com/watch?v=LKFuXETZUsI"
       },
       {
         "id": 3,
@@ -30,7 +32,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "1989 - 2019 • 31 Seasons • Comedy, Animation",
         "title": "The Simpsons",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/47A6FB38D95B3A5EF5583C9EED0B698ED2992CBA4AC7222DD3269DC92DFA03A6/scale?width=1440&aspectRatio=1.78",
-        "type": "trending"
+        "type": "trending",
+        "trailer": "https://www.youtube.com/watch?v=XPG0MqIcby8"
       },
       {
         "id": 4,
@@ -40,7 +43,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2010 • 1h 40m • Family, Fantasy, Animation, Action-Adventure, Musical",
         "title": "Tangled",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F70235E3463A6F246EB462ED5379F9D41D6318E80098BD40900E7AFC1C7D932D/scale?width=1440&aspectRatio=1.78",
-        "type": "trending"
+        "type": "trending",
+        "trailer": "https://www.youtube.com/watch?v=JYKpIr1lSG0"
       },
       {
         "id": 5,
@@ -50,7 +54,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2006 • 1h 19m • Family, Comedy, Kids",
         "title": "A tail of two kitties",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/50B933E83609BEEFEDFA177A6D96DBFA7804C14F70A0B5AB314E892E65498ACF/scale?width=1440&aspectRatio=1.78",
-        "type": "new"
+        "type": "new",
+        "trailer": "https://www.youtube.com/watch?v=BLTnQko_Lz4"
       },
       {
         "id": 6,
@@ -60,7 +65,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2021 • 1 Season • Science Fiction, Fantasy, Action-Adventure",
         "title": "Legends",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DDFF0FDF457E092EE53149CE7DB5BD14CB97E27B92D2D087E7C687B4E3073DE2/scale?width=1440&aspectRatio=1.78",
-        "type": "original"
+        "type": "original",
+        "trailer": "https://www.youtube.com/watch?v=lWQF6F81kbY"
       },
       {
         "id": 7,
@@ -70,7 +76,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2019 • 53m • Documentary, Biographical, Music",
         "title": "My music story",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/97BB36F8B9FC053F561894DD7B1C42C4FD20E63560F481CBCB3B9D3600CFCA3B/scale?width=1440&aspectRatio=1.78",
-        "type": "new"
+        "type": "new",
+        "trailer": "https://www.youtube.com/watch?v=YGehvENK74o"
       },
       {
         "id": 8,
@@ -80,7 +87,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2021 • 1 Season • Docuseries, Anthology",
         "title": "Assembled",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/37D80C5D1AB0BA65C63588311EC60A07342F60F91D402C28B8E1137AF6A30549/scale?width=1440&aspectRatio=1.78",
-        "type": "original"
+        "type": "original",
+        "trailer": "https://www.youtube.com/watch?v=VybOxMZ-NGQ"
       },
       {
         "id": 9,
@@ -90,7 +98,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2018 • 7m • Family, Comedy, Animation",
         "title": "Auntie EDNA",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A31BE6502DC7A3A01DAF58DF7E91AB6FF598A078C8FA88A1DB2D7B7E25439464/scale?width=1440&aspectRatio=1.78",
-        "type": "recommend"
+        "type": "recommend",
+        "trailer": "https://www.youtube.com/watch?v=iQCtL_M0OVw"
       },
       {
         "id": 10,
@@ -100,7 +109,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2021 • 1 Season • Science Fiction, Action-Adventure, Buddy",
         "title": "The falcon and the winter soldier",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4A67A42FB16607DAE7E22266D3F00181965178ED1884047C2D982EE7D89D3554/scale?width=1440&aspectRatio=1.78",
-        "type": "new"
+        "type": "new",
+        "trailer": "https://www.youtube.com/watch?v=IWBsDaFWyTE"
       },
       {
         "id": 11,
@@ -110,7 +120,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2006 - 2013 • 5 Seasons • Kids, Animation",
         "title": "Mickey mouse",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4FF3FCD567F0263430DFC33B9489CE2799AE33B50AD553DE65F03B3EA2E19828/scale?width=1440&aspectRatio=1.78",
-        "type": "trending"
+        "type": "trending",
+        "trailer": "https://www.youtube.com/watch?v=VPSZpev49Jo"
       },
       {
         "id": 12,
@@ -120,7 +131,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2015 • 1h 35m • Coming of Age, Family, Animation",
         "title": "Inside Out",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C647DF3FFBFA343CFEA84AC715148F25F9E86F398B408010CC403E7654FB908/scale?width=1440&aspectRatio=1.78",
-        "type": "recommend"
+        "type": "recommend",
+        "trailer": "https://www.youtube.com/watch?v=yRUAzGQ3nSY"
       },
       {
         "id": 13,
@@ -130,7 +142,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2018 • 1h 58m • Science Fiction, Family, Animation, Action-Adventure",
         "title": "Incredibles 2",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2041CE26663867FC4EF20377B8625BD629E619452E23BCDB1AB259DD475C2EA1/scale?width=1440&aspectRatio=1.78",
-        "type": "recommend"
+        "type": "recommend",
+        "trailer": "https://www.youtube.com/watch?v=i5qOzqD9Rms"
+
       },
       {
         "id": 14,
@@ -140,7 +154,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2022 • 2h 8m • Science Fiction, Fantasy, Action-Adventure, Super Hero",
         "title": "Doctor Strange In The Multiverse Of Madness",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7117086D0FB973554C63B533687E7D49F259C18C59BF6356CE0511C2B47B8C78/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "recommend"
+        "type": "recommend",
+        "trailer": "https://www.youtube.com/watch?v=aWzlQ2N6qqg"
       },
       {
         "id": 15,
@@ -150,7 +165,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2022 • 35m • Documentary",
         "title": "Beyond Infinity Buzz And The Journey To Lightyear",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/892DD8EDB99294A1ED5695B56BD573CE7D0B0C82886A38464399279EED24B76C/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "trending"
+        "type": "trending",
+        "trailer": "https://www.youtube.com/watch?v=UgQbPITUGD0"
       },
       {
         "id": 16,
@@ -160,7 +176,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2008 • 1h 50m • Drama, Biographical, Buddy",
         "title": "The Duchess",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1E8A7156D7F78A4C5713DF044D050D20BC44F9D24C62F095E4DECD6B7CE8A535/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "new"
+        "type": "new",
+        "trailer": "https://www.youtube.com/watch?v=111EyWUrYZM"
       },
       {
         "id": 17,
@@ -170,7 +187,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2022 • 1 season • Coming of Age, Comedy, Super Hero, Action-Adventure",
         "title": "Ms Marvel",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C45AA585728BCEA5F89F94F64CDB721509FBECEB1780320FB9E188971D2E8BAC/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "recommend"
+        "type": "recommend",
+        "trailer": "https://www.youtube.com/watch?v=m9EX0f6V11Y"
       },
       {
         "id": 18,
@@ -180,7 +198,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2021 • 1 Season • Fantasy, Super Hero, Action-Adventure",
         "title": "Moon Knight",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/76A2EA7F1A6B20AC4BE4AA5262DE545092BD5B472C2BD12EE62DF277803B5127/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "original"
+        "type": "original",
+        "trailer": "https://www.youtube.com/watch?v=x7Krla_UxRg"
       },
       {
         "id": 19,
@@ -190,7 +209,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2021 • 2h 19m • Romance, Family, Comedy, Fantasy, Action-Adventure",
         "title": "Jungle Cruise",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/736F1E286379C7423ED0AEDE438A3E70ACC471FB4FD92BC89B8B5F54FBE62456/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "original"
+        "type": "original",
+        "trailer": "https://www.youtube.com/watch?v=f_HvoipFcA8"
       },
       {
         "id": 20,
@@ -200,7 +220,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         "subTitle": "2022 • 1 season • Docuseries",
         "title": "Light & Magic",
         "titleImg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/821933CE363463FBB1A80DD16A2826F2D671C767C18F6F50171D707A0954EBAB/scale?width=1440&aspectRatio=1.78&format=png",
-        "type": "original"
+        "type": "original",
+        "trailer": "https://www.youtube.com/watch?v=DM_XwzOK_98"
       }
     ]
   )

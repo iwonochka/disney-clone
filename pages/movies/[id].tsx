@@ -32,6 +32,7 @@ export default function Showpage({movieResults}: Props) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const res = await fetch(`${process.env.MOVIES_URL}`);
+
   const movieData = await res.json();
 
   const paths = movieData?.map((movie: MovieListType) => ({

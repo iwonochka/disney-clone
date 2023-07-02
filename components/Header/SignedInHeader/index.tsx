@@ -16,7 +16,7 @@ function SignedInHeader({session}: Props) {
   return (
     <>
     <NavMenu>
-        <a>
+        <a href='/'>
           <AiOutlineHome/>
           <span>HOME</span>
         </a>

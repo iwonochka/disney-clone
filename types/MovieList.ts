@@ -7,4 +7,5 @@ export interface MovieListType {
   title: string;
   titleImg: string;
   type: string;
+  trailer: string;
 }

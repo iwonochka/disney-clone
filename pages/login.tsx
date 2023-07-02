@@ -2,6 +2,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import SignUp from "../components/SignUp";
+import { Spinner } from "../components/Spinner/spinner";
 
 export default function Login() {
   const { data: session, status } = useSession();
@@ -17,7 +18,7 @@ export default function Login() {
     return () => {};
   }, []);
 
-  if (status === "loading") return <p>Loading</p>;
+  if (status === "loading") return <Spinner/>
 
   if (!session)
     return (
