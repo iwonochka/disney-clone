@@ -7,15 +7,14 @@ interface Props {
 }
 
 function ShowpageLayout({movieResults}: Props) {
+
+  const containerStyle = {
+    backgroundImage: `url(${movieResults.backgroundImg})`
+  }
   return (
     <Container
-      style={{
-      backgroundImage: `url(${movieResults.backgroundImg})`,
-      opacity: "0.8",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      }}
+     // pass dynamic value into styles
+     style={containerStyle}
     >
 
     </Container>
