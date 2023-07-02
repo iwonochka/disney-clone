@@ -1,6 +1,6 @@
 import React from 'react'
 import { MovieListType } from '../../types/MovieList'
-import { Container } from './styles';
+import { Container, ImageTitle } from './styles';
 
 interface Props {
   movieResults: MovieListType;
@@ -12,11 +12,11 @@ function ShowpageLayout({movieResults}: Props) {
     backgroundImage: `url(${movieResults.backgroundImg})`
   }
   return (
-    <Container
-     // pass dynamic value into styles
-     style={containerStyle}
-    >
-
+    // pass dynamic value into styles
+    <Container style={containerStyle}>
+      <ImageTitle>
+        <img src={movieResults.titleImg} alt="" />
+      </ImageTitle>
     </Container>
   )
 }
