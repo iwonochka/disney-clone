@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import HomeLayout from '../components/HomeLayout';
 import { MovieListType } from '../types/MovieList';
 import { GetServerSideProps } from 'next';
+import { Spinner } from '../components/Spinner/spinner';
 
 interface Props {
   movieResult: MovieListType[]
@@ -26,15 +27,11 @@ export default function Home({movieResult}: Props) {
     return () => {};
   }, []);
 
-  if (status === "loading") return <p>Loading</p>;
+  if (status === "loading") return <Spinner/>
 
   if (session)
     return (
-      <>
-        <HomeLayout movieResult={movieResult}>
-
-        </HomeLayout>
-      </>
+      <HomeLayout movieResult={movieResult}/>
     )
 
   }
