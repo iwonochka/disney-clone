@@ -17,4 +17,5 @@ export default NextAuth({
       return url;
     },
   },
+  secret: process.env.GOOGLE_CLIENT_SECRET
 });
