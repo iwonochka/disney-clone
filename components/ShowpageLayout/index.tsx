@@ -1,6 +1,6 @@
 import React from 'react'
 import { MovieListType } from '../../types/MovieList'
-import { AddButton, Container, Controls, GroupWatchButton, ImageTitle, PlayButton, TrailerButton } from './styles';
+import { AddButton, Container, Controls, Description, GroupWatchButton, ImageTitle, PlayButton, Details, TrailerButton } from './styles';
 
 interface Props {
   movieResults: MovieListType;
@@ -33,6 +33,8 @@ function ShowpageLayout({movieResults}: Props) {
           <img src="/images/group-icon.png" alt="group watch button" />
         </GroupWatchButton>
       </Controls>
+      <Details>{movieResults.subTitle}</Details>
+      <Description>{movieResults.description}</Description>
     </Container>
   )
 }

@@ -64,9 +64,7 @@ export const AddButton = styled.button`
   margin-right: 16px;
   width: 44px;
   display: flex;
-  //vertical alignment
   align-items: center;
-  //horizontal alignment
   justify-content: center;
   background: rgba(0, 0, 0, 0.6);
   border: 2px solid white;
@@ -79,4 +77,18 @@ export const AddButton = styled.button`
 
 export const GroupWatchButton = styled(AddButton)`
   background: rgb(0, 0, 0);
+`;
+
+export const Details = styled.div`
+  font-size: 15px;
+  min-height: 20px;
+  margin-top: 26px;
+`;
+
+export const Description = styled.div`
+  font-size: 20px;
+  min-height: 20px;
+  margin-top: 16px;
+  line-height: 1.4;
+  max-width: 760px;
 `;
