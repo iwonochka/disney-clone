@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Spinner = styled.div`
-  border: 16px solid #1B3157;
-  border-top: 16px #3DA3E7 solid;
+  border: 16px solid ${(props) => props.theme.silver};
+  border-top: 16px ${(props) => props.theme.brightBlue} solid;
   border-radius: 50%;
   height: 120px;
   width: 120px;

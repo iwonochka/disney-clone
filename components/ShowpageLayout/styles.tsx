@@ -32,6 +32,11 @@ export const ImageTitle = styled.div`
 export const Controls = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 export const PlayButton = styled.button`
@@ -91,4 +96,18 @@ export const Description = styled.div`
   margin-top: 16px;
   line-height: 1.4;
   max-width: 760px;
+`;
+
+export const PlayerWrapper = styled.div`
+  margin: 2rem 0;
+  position: relative;
+  padding-top: 56.25%;
+`;
+
+export const Player = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `;

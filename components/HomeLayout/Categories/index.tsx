@@ -8,8 +8,8 @@ const Categories = () => {
   return (
     <Container>
       {VideoData?.map((item) => (
-          <Wrapper>
-            <CategoryContent  video={item.video}
+          <Wrapper >
+            <CategoryContent video={item.video}
             defaultImage={item.imageUrl}
             name={item.name}/>
           </Wrapper>
