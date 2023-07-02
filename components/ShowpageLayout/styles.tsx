@@ -28,3 +28,55 @@ export const ImageTitle = styled.div`
     width: 35vw;
   }
 `;
+
+export const Controls = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const PlayButton = styled.button`
+  border-radius: 4px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background: rgb(249, 249, 249);
+  border: none;
+  padding: 0px 24px;
+  margin-right: 22px;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    background: rgb(198, 198, 198);
+  }
+`;
+
+export const TrailerButton = styled(PlayButton)`
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(249, 249, 249);
+  color: rgb(249, 249, 249);
+`;
+
+export const AddButton = styled.button`
+  border-radius: 50%;
+  height: 44px;
+  margin-right: 16px;
+  width: 44px;
+  display: flex;
+  //vertical alignment
+  align-items: center;
+  //horizontal alignment
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  cursor: pointer;
+  span {
+    font-size: 30px;
+    color: white;
+  }
+`;
+
+export const GroupWatchButton = styled(AddButton)`
+  background: rgb(0, 0, 0);
+`;
