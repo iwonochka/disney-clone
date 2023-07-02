@@ -5,6 +5,7 @@ import { ParsedUrlQuery } from 'querystring';
 import ShowpageLayout from '../../components/ShowpageLayout';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import { Spinner } from '../../components/Spinner/spinner';
 
 interface Props {
   movieResults: MovieListType;
@@ -24,7 +25,7 @@ export default function Showpage({movieResults}: Props) {
     return () => {};
   }, []);
 
-  if (status === "loading") return <p>Loading</p>;
+  if (status === "loading") return <Spinner/>;
 
   if (session) return <ShowpageLayout movieResults={movieResults} />;
 }
