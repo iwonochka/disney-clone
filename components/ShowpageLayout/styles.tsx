@@ -102,12 +102,14 @@ export const PlayerWrapper = styled.div`
   margin: 2rem 0;
   position: relative;
   padding-top: 56.25%;
+
 `;
 
 export const Player = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 80%;
+width: 80%;
 `;
