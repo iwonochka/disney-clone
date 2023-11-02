@@ -1,21 +1,11 @@
 import React from 'react'
-import { useSession, signIn } from "next-auth/react"
-import { Nav, Logo, LoginContainer, Login } from './styles'
+import { Nav, Logo } from './styles'
 import SignedInHeader from './SignedInHeader'
 
 function Header() {
-  const { data: session, status } = useSession()
+
   const renderHeader = () => {
-    if (session) return (
-      <SignedInHeader session={session}/>
-    )
-    return (
-     <LoginContainer>
-      <Login onClick={() => signIn()}>
-        Login
-      </Login>
-     </LoginContainer>
-    )
+    return <SignedInHeader/>
   }
 
   return (

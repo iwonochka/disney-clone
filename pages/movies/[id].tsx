@@ -16,18 +16,9 @@ export default function Showpage({movieResults}: Props) {
   const { data: session, status } = useSession();
   const router = useRouter();
 
-  useEffect(() => {
-    if (!session) {
-      router.push({
-        pathname: "/login",
-      });
-    }
-    return () => {};
-  }, []);
-
   if (status === "loading") return <Spinner/>;
 
-  if (session) return <ShowpageLayout movieResults={movieResults} />;
+  return <ShowpageLayout movieResults={movieResults} />;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

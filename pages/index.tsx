@@ -1,6 +1,5 @@
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 import HomeLayout from '../components/HomeLayout';
 import { MovieListType } from '../types/MovieList';
 import { GetServerSideProps } from 'next';
@@ -16,22 +15,10 @@ export default function Home({movieResult}: Props) {
   const { data: session, status } = useSession();
   const router = useRouter();
 
-  useEffect(() => {
-    if (!session) {
-      //redirecting to homepage
-      router.push({
-        pathname: "/login",
-      });
-    }
-    return () => {};
-  }, []);
-
   if (status === "loading") return <Spinner/>
 
-  if (session)
-    return (
-      <HomeLayout movieResult={movieResult}/>
-    )
+  return <HomeLayout movieResult={movieResult}/>
+
 
   }
 
