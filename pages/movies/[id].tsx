@@ -31,7 +31,7 @@ export default function Showpage({movieResults}: Props) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch(`${process.env.MOVIES_URL}`);
+  const res = await fetch(`https://disney-clone-ivory.vercel.app/api/movies`);
 
   const movieData = await res.json();
 

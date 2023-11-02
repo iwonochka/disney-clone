@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 100vh;
-  overflow-x: hidden;
+  overflow: auto;
   display: block;
   top: 0px;
   padding: 0 calc(3.5vw + 5px);
@@ -11,6 +11,11 @@ export const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const ImageTitle = styled.div`
