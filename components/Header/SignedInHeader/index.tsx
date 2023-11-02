@@ -5,14 +5,8 @@ import { DropDown, NavMenu, SignOut, UserImg } from '../styles';
 import {AiOutlineHome, AiOutlineSearch,AiOutlinePlusCircle, AiOutlineStar, AiOutlineVideoCamera} from 'react-icons/ai'
 import {TfiVideoClapper} from 'react-icons/tfi'
 
-interface Props {
-  session: Session;
-}
 
-function SignedInHeader({session}: Props) {
-  const image = session?.user?.image as string;
-  const name = session?.user?.name as string;
-
+function SignedInHeader() {
   return (
     <>
     <NavMenu>
@@ -41,12 +35,6 @@ function SignedInHeader({session}: Props) {
           <span>SERIES</span>
         </a>
       </NavMenu>
-      <SignOut>
-        {session !== null ? <UserImg src={image} alt={name} /> : null}
-        <DropDown>
-          <span onClick={() => signOut()}>Sign out</span>
-        </DropDown>
-      </SignOut>
     </>
   )
 }
