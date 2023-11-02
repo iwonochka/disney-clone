@@ -52,7 +52,7 @@ interface ContextParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps = async (context) => {
   const { id } = context.params as ContextParams;
 
-  const movieResults = await fetch(`${process.env.MOVIES_URL}/${id}`)
+  const movieResults = await fetch(`https://disney-clone-ivory.vercel.app/api/movies/${id}`)
   .then((res) => res.json());
 
   return {
