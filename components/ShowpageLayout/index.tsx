@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MovieListType } from '../../types/MovieList'
 import { AddButton, Container, Controls, Description, GroupWatchButton, ImageTitle, PlayButton, Details, TrailerButton, PlayerWrapper, Player } from './styles';
 import ReactPlayer from 'react-player';
@@ -10,16 +10,30 @@ interface Props {
 function ShowpageLayout({movieResults}: Props) {
   const [showTrailer, setShowTrailer] = useState(false);
 
+  useEffect(() => {
+    if (showTrailer) {
+      scrollToTarget();
+    }
+  }, [showTrailer]);
+
   const handleTrailerClick = () => {
     setShowTrailer(true);
-  };
+  }
+
+  const scrollToTarget = () => {
+    const trailerWindow = document.querySelector('.react-player__preview');
+
+    if (trailerWindow) {
+      trailerWindow.id = 'trailerWindow';
+      trailerWindow.scrollIntoView({ behavior: 'smooth' });
+   };
+  }
 
   const containerStyle = {
     backgroundImage: `url(${movieResults.backgroundImg})`
   }
-  console.log("trailer:", movieResults.trailer)
+
   return (
-    // pass dynamic value into styles
     <Container style={containerStyle}>
       <ImageTitle>
         <img src={movieResults.titleImg} alt="" />
